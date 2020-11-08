@@ -44,7 +44,8 @@ bool Sudoku::isOkForRow(int row, int n)
 		return isOkForRow(row, n) && isOkForCol(col, n) && isOkForBox(row - (row % 3), col - (col % 3), n);
 	}
 
-	Sudoku::Sudoku()
+	Sudoku::Sudoku() {};
+	void Sudoku::enterDigits()
 	{
 		
 		for (int i = 0; i < 9; i++)
