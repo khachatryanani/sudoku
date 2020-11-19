@@ -16,6 +16,7 @@ private:
 	
 public:
 	Sudoku();
+
 	void enterDigits();
 
 	bool Solve();
