@@ -2,8 +2,8 @@
 class Sudoku
 {
 private:
-	const int size = 9;
-	static int sudoku[size][size];
+	const static int size = 9;
+	int sudoku[size][size];
 
 	bool isOkForRow(int row, int n);
 	
