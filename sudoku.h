@@ -2,7 +2,8 @@
 class Sudoku
 {
 private:
-	int sudoku[9][9];
+	const static int size = 9;
+	int sudoku[size][size];
 
 	bool isOkForRow(int row, int n);
 	
@@ -15,9 +16,9 @@ private:
 	
 public:
 	Sudoku();
-	
+
 	void enterDigits();
-	
+
 	bool Solve();
 	
 	void Print();
